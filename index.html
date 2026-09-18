@@ -126,5 +126,39 @@
     <p>E-mail: valami@valami.com | &copy; 2026 Saját Neved. Minden jog fenntartva.</p>
 </footer>
 
+<!-- JS -->
+    <section id="js-labor" style="margin-top: 40px; padding: 20px; background-color: #eef7f2; border-radius: 8px;">
+        <h2>JavaScript Interakciók (Lab 3)</h2>
+
+            <div class="container">
+                <h3>Számláló</h3>
+                <button onclick="incrementCounter()">Növelés</button>
+                <p>Jelenlegi érték: <strong id="counter">0</strong></p>
+
+                <h3>Név bekérése</h3>
+                <button onclick="askName()">Kérdezd meg a nevét</button>
+                <p id="name"></p>
+
+                <h3>Visszaszámláló</h3>
+                <button onclick="startCountdown()">Indítsd el</button>
+                <p>Idő: <strong id="countdown">10</strong></p>
+
+                <h3>Háttérszín</h3>
+                <button onclick="changeBg()">Háttér váltása (lightcoral)</button>
+            </div>
+
+            <div>
+                <h3>Gyümölcs lista (Tömb)</h3>
+                <ul id="fruitList"></ul>
+
+                <h3>Személy adatai (Objektum)</h3>
+                <ul id="personInfo"></ul>
+            </div>
+
+    </section>
+    <script src="script.js"></script>
+
+
+
 </body>
 </html>
