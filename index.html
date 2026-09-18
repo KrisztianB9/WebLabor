@@ -4,99 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Üdvözöllek a portfóliómban!</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
+
+    <style>
+        .kiemelt-szoveg {
+            color: darkmagenta;
+            font-weight: bold;
+        }
+        .fontos-jegyzet {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 5px solid #ffc107;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <h1>Üdvözöllek a portfóliómban!</h1>
-        <nav>
-            <a href="#fooldal">Főoldal</a> |
-            <a href="#rolam">Rólam</a> |
-            <a href="#kepessegek">Képességek</a> |
-            <a href="#projektek">Projektek</a> |
-            <a href="#galeria">Galéria</a> |
-            <a href="#kapcsolat">Kapcsolat</a>
-        </nav>
-    </header>
-    <aside>
-        <h3>Gyorsmenü</h3>
-        <ul>
-            <li><a href="#projektek">Ugrás a projektjeimhez</a></li>
-        </ul>
-    </aside>
+<header>
+    <h1>Üdvözöllek a portfóliómban!</h1>
+    <nav>
+        <a href="#rolam-es-kepessegek">Rólam & Képességek</a> |
+        <a href="#projektek">Projektek</a> |
+        <a href="#galeria">Galéria</a> |
+        <a href="#kapcsolat">Kapcsolat</a>
+    </nav>
+</header>
 
-    <main id="fooldal">
+<main>
+    <div class="fontos-jegyzet">
+        <p>Ez egy <span class="kiemelt-szoveg">belső CSS-sel</span> formázott doboz.
+            Itt pedig egy <span style="color: red; text-decoration: underline;">inline CSS példa</span> látható.</p>
+    </div>
 
-        <section id="rolam">
-            <h1>Rólam</h1>
+    <section id="rolam-es-kepessegek" class="container">
+        <!-- Rólam -->
+        <div>
+            <h2>Rólam</h2>
+            <img src="kep.jpg" alt="Az én profilképem" class="avatar">
+            <p>Sziasztok, én egy lelkes webfejlesztő hallgató vagyok. Szeretek új technológiákat tanulni és szép weboldalakat építeni.</p>
+        </div>
 
-            <img src="kep.jpg" alt="Az én profilképem" width="150">
-
-            <h2>Bemutatkozás</h2>
-            <p>Sziasztok, én egy lelkes webfejlesztő hallgató vagyok. Szeretek új technológiákat tanulni.</p>
-
-            <h2>Érdeklődési körök</h2>
-            <p>Érdekel a programozás, a mesterséges intelligencia és a túrázás.</p>
-        </section>
-
-        <section id="kepessegek">
+        <!-- Képességek -->
+        <div>
             <h2>Képességek</h2>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+                <li>  HTML5</li>
+                <li>  CSS3 (Flexbox, Grid)</li>
+                <li>  JavaScript</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section id="projektek">
-            <h2>Projektek</h2>
-            <table border="1">
-                <tr>
-                    <th>Projekt neve</th>
-                    <th>Leírás</th>
-                    <th>Használt technológiák</th>
-                </tr>
-                <tr>
-                    <td>Első weboldalam</td>
-                    <td>Egy egyszerű HTML alapú bemutatkozó oldal</td>
-                    <td>HTML</td>
-                </tr>
-            </table>
-        </section>
+    <aside>
+        <h2>Mérföldkövek</h2>
+        <ol>
+            <li>Alap HTML elsajátítása</li>
+            <li>CSS formázások megértése</li>
+            <li>Reszponzív weboldal építése</li>
+        </ol>
+    </aside>
 
-        <section id="galeria">
-            <h2>Galéria</h2>
+    <section id="projektek">
+        <h2>Projektek</h2>
+        <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+            <tr>
+                <th style="padding: 10px;">Projekt neve</th>
+                <th style="padding: 10px;">Leírás</th>
+                <th style="padding: 10px;">Használt technológiák</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">Portfólió oldal</td>
+                <td style="padding: 10px;">Reszponzív bemutatkozó weboldal Flexbox és Grid elrendezéssel.</td>
+                <td style="padding: 10px;">HTML, CSS</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="galeria">
+        <h2>Galéria</h2>
+        <div class="grid">
             <figure>
-                <img src="projekt_kep.jpg" alt="Projekt fotója" width="300">
-                <figcaption>Az első projektem képernyőképe</figcaption>
+                <img src="projekt_kep.jpg" alt="Projekt 1 fotója">
+                <figcaption>Első projekt design</figcaption>
             </figure>
-        </section>
+            <figure>
+                <img src="projekt_kep.jpg" alt="Projekt 2 fotója">
+                <figcaption>Mobilnézet tesztelése</figcaption>
+            </figure>
+            <figure>
+                <img src="projekt_kep.jpg" alt="Projekt 3 fotója">
+                <figcaption>Kódolás WebStormban</figcaption>
+            </figure>
+        </div>
+    </section>
 
-        <section>
-            <h2>Kedvenc technológiai videóm</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
+    <section>
+        <h2>Kedvenc technológiai videóm</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ix9cRaBkVe0?si=WGq4I6W6fAqIr0P7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
 
-        <section id="kapcsolat">
-            <h2>Kapcsolat</h2>
-            <form action="#" method="POST">
-                <label for="nev">Név:</label><br>
-                <input type="text" id="nev" name="nev" required><br><br>
+    <section id="kapcsolat">
+        <h2>Kapcsolat</h2>
+        <form action="#" method="POST">
+            <label for="nev">Név:</label><br>
+            <input type="text" id="nev" name="nev" required><br><br>
 
-                <label for="email">E-mail cím:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+            <label for="email">E-mail cím:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
 
-                <label for="uzenet">Üzenet:</label><br>
-                <textarea id="uzenet" name="uzenet" rows="4" cols="30"></textarea><br><br>
+            <label for="uzenet">Üzenet:</label><br>
+            <textarea id="uzenet" name="uzenet" rows="4" cols="50"></textarea><br><br>
 
-                <button type="submit">Küldés</button>
-            </form>
-        </section>
-    </main>
+            <button type="submit">Üzenet küldése</button>
+        </form>
+    </section>
+</main>
 
-    <footer>
-        <p>E-mail: bacsokrisztian@gmail.com | &copy; 2026 Bacso Krisztian. Minden jog fenntartva.</p>
-    </footer>
+<footer style="margin-top: 40px; padding: 20px; background-color: #ddd; text-align: center;">
+    <p>E-mail: valami@valami.com | &copy; 2026 Saját Neved. Minden jog fenntartva.</p>
+</footer>
 
 </body>
 </html>
