@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üdvözöllek a portfóliómban!</title>
+</head>
+<body>
+
+    <header>
+        <h1>Üdvözöllek a portfóliómban!</h1>
+        <nav>
+            <a href="#fooldal">Főoldal</a> |
+            <a href="#rolam">Rólam</a> |
+            <a href="#kepessegek">Képességek</a> |
+            <a href="#projektek">Projektek</a> |
+            <a href="#galeria">Galéria</a> |
+            <a href="#kapcsolat">Kapcsolat</a>
+        </nav>
+    </header>
+    <aside>
+        <h3>Gyorsmenü</h3>
+        <ul>
+            <li><a href="#projektek">Ugrás a projektjeimhez</a></li>
+        </ul>
+    </aside>
+
+    <main id="fooldal">
+
+        <section id="rolam">
+            <h1>Rólam</h1>
+
+            <img src="kep.jpg" alt="Az én profilképem" width="150">
+
+            <h2>Bemutatkozás</h2>
+            <p>Sziasztok, én egy lelkes webfejlesztő hallgató vagyok. Szeretek új technológiákat tanulni.</p>
+
+            <h2>Érdeklődési körök</h2>
+            <p>Érdekel a programozás, a mesterséges intelligencia és a túrázás.</p>
+        </section>
+
+        <section id="kepessegek">
+            <h2>Képességek</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="projektek">
+            <h2>Projektek</h2>
+            <table border="1">
+                <tr>
+                    <th>Projekt neve</th>
+                    <th>Leírás</th>
+                    <th>Használt technológiák</th>
+                </tr>
+                <tr>
+                    <td>Első weboldalam</td>
+                    <td>Egy egyszerű HTML alapú bemutatkozó oldal</td>
+                    <td>HTML</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="galeria">
+            <h2>Galéria</h2>
+            <figure>
+                <img src="projekt_kep.jpg" alt="Projekt fotója" width="300">
+                <figcaption>Az első projektem képernyőképe</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Kedvenc technológiai videóm</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section id="kapcsolat">
+            <h2>Kapcsolat</h2>
+            <form action="#" method="POST">
+                <label for="nev">Név:</label><br>
+                <input type="text" id="nev" name="nev" required><br><br>
+
+                <label for="email">E-mail cím:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="uzenet">Üzenet:</label><br>
+                <textarea id="uzenet" name="uzenet" rows="4" cols="30"></textarea><br><br>
+
+                <button type="submit">Küldés</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>E-mail: bacsokrisztian@gmail.com | &copy; 2026 Bacso Krisztian. Minden jog fenntartva.</p>
+    </footer>
+
+</body>
+</html>
